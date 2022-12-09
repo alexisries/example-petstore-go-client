@@ -36,7 +36,7 @@ oapi-codegen -generate types,client -package petstore https://petstore3.swagger.
 
 ### Run application
 
-To build application, execute `go run` command :
+To run application, execute `go run` command :
 
 ```shell
 go run *.go
