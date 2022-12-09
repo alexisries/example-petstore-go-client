@@ -16,9 +16,11 @@ To automatically regenerate the petstore package from the openapi specs, you wil
 go install github.com/deepmap/oapi-codegen/cmd/oapi-codegen@latest
 ```
 
-## Deploy petstore swagger instance
+## Petstore API
 
-To deploy a petstore API, please follow readme on [swagger-petstore](https://github.com/swagger-api/swagger-petstore) GitHub repository.
+You can use the publicly available petstore API : https://petstore3.swagger.io
+
+To deploy an instance of petstore yourself, please follow readme on [swagger-petstore](https://github.com/swagger-api/swagger-petstore) GitHub repository.
 
 ## Build
 
@@ -29,7 +31,7 @@ The petstore package was automatically generated from the openapi specifications
 Here is the command to regenerate the petstore package :
 
 ```shell
-oapi-codegen -generate types,client -package petstore http://localhost:8080/api/v3/openapi.json > petstore/petstore.gen.go
+oapi-codegen -generate types,client -package petstore https://petstore3.swagger.io/api/v3/openapi.json > petstore/petstore.gen.go
 ```
 
 ### Run application

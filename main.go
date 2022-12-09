@@ -8,7 +8,7 @@ import (
 
 func main() {
 	// initialize petstore api client
-	client, err := petstore.NewClientWithResponses("http://localhost:8080/api/v3")
+	client, err := petstore.NewClientWithResponses("https://petstore3.swagger.io/api/v3")
 	if err != nil {
 		panic(err)
 	}
