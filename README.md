@@ -29,7 +29,7 @@ The petstore package was automatically generated from the openapi specifications
 Here is the command to regenerate the petstore package :
 
 ```shell
-oapi-codegen -generate types,client -package petstore petstore/openapi.json  > petstore/petstore.gen.go
+oapi-codegen -generate types,client -package petstore http://localhost:8080/api/v3/openapi.json > petstore/petstore.gen.go
 ```
 
 ### Run application
